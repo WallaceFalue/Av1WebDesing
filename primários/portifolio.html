@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV1-Pagina pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="backgroundsld1">
+    <div class="butoesld1">
+        <button><a href="aluno.html">Aluno</a></button>
+        <button><a href="Inicial.html">Inicial</a></button>
+        <button><a href="novidade.html">Novidades</a></button>
+        <button><a href="contato.html">Contato</a></button>
+    </div>
+    <h1 class="titulosld1">Meu portifólio:</h1>
+    <hr class="linhasl1">
+    <h3>Ainda não tenho projetos complexos e funcionais, mas segue abaixo alguns o meus primeiros códigos feitos em
+        Python:</h3>
+    <hr class="linhasl1">
+    <h2>Back-end:</h2>
+    <div class="caixasCodigos">
+        <div class="caixaCodigos">
+            <h2>Calculadora</h2>
+            <p>
+                <br>
+                from math import sqrt<br>
+                n1 = int(input('Primeiro número: '))<br>
+                n2 = int(input('Segundo número: '))<br>
+                operador = input('Operador [+, -, *, /, **, √(r2)]: ').lower()<br>
+                if operador == '+':<br>
+                print(f'{n1} + {n2} = {n1 + n2}')<br>
+                elif operador == '-':<br>
+                print(f'{n1} - {n2} = {n1 - n2}')<br>
+                elif operador == '*':<br>
+                print(f'{n1} * {n2} = {n1 * n2}')<br>
+                elif operador == '/':<br>
+                if n2 != 0:<br>
+                print(f'{n1} / {n2} = {n1 / n2}')<br>
+                else:<br>
+                print('Erro: divisão por zero.')<br>
+                elif operador == '**':<br>
+                expoente = int(n2)<br>
+                valor = n1<br>
+                for _ in range(expoente - 1):<br>
+                valor *= n1<br>
+                print(f'{n1} ** {n2} = {valor}')<br>
+                elif operador == 'r2':<br>
+                print('Apenas o primeiro número será contabilizado')<br>
+                print(f'Raiz quadrada de {n1} = {sqrt(n1)}')<br>
+                else:<br>
+                print('Erro: operação inválida.')<br>
+            </p>
+            <button><a href="https://i.scdn.co/image/ab67616d0000b273d50b5da81728b0805e741c3b"
+                    target="_blank">Repositório GitHub</a></button>
+        </div>
+        <div class="caixaCodigos">
+            <h2>Jogo de Adivinhação</h2>
+            <p>
+                <br>
+                from random import randint<br>
+                jogo = input('Vamos jogar um jogo? \n [y/n]:').lower()<br>
+                if jogo == 'y':<br>
+                print('Serão 10 rounds \n Você ganha se acertar pelo menos 1')<br>
+                pc = 0<br>
+                for c in range(10):<br>
+                n = int(input('Escolha um número de 1 a 10: '))<br>
+                nc = randint(1, 10)<br>
+                print(f'Meu número: {nc}')<br>
+                if n == nc:<br>
+                print('Parabéns!!! Você ganhou!')<br>
+                break<br>
+                elif n != nc:<br>
+                pc += 1<br>
+                if pc == 1:<br>
+                print(f'Infelizmente você perdeu! Placar: (0x{pc})')<br>
+                elif pc >= 1:<br>
+                print(f'Que pena! Perdeu mais uma! Placar: (0x{pc})')<br>
+                else:<br>
+                print('blz então, até mais!')<br>
+            </p>
+            <button><a href="https://i.scdn.co/image/ab67616d0000b273d50b5da81728b0805e741c3b"
+                    target="_blank">Repositório GitHub</a></button>
+        </div>
+        <div class="caixaCodigos">
+            <h2>Simulador de juros simples</h2>
+            <p>
+                <br>
+                from time import sleep<br>
+<br>
+                print('Regras do empréstimo: \n'<br>
+                    '1º: Não há juros mensais até R$ 1000\n'<br>
+                    '2º: De R$ 1000 até R$ 10000, os juros são de 3% ao mês\n'<br>
+                    '3º: Para valores acima de R$ 10000, os juros são de 6% ao mês\n'<br>
+                    '4º: Em qualquer opção, há juros anuais de 12% ao ano')<br>
+                sleep(0.3)<br>
+                valor = float(input('Valor que deseja adquirir (em reais): '))<br>
+                tempo = int(input('Tempo total do parcelamento (em meses): '))<br>
+                sleep(0.3)<br>
+                juros_anuais = 12 / 100<br>
+                if valor <= 1000:<br>
+                    juros_mensais = 0<br>
+                elif 1000 < valor <= 10000:<br>
+                    juros_mensais = 3 / 100<br>
+                else:<br>
+                    juros_mensais = 6 / 100<br>
+                montante_final = valor * ((1 + juros_mensais) ** tempo)<br>
+                if tempo >= 12:<br>
+                    montante_final *= (1 + juros_anuais) ** (tempo // 12)<br>
+                print(f'O valor total a ser pago será de R$ {montante_final:.2f}')<br>
+            </p>
+            <button><a href="https://i.scdn.co/image/ab67616d0000b273d50b5da81728b0805e741c3b"
+                    target="_blank">Repositório GitHub</a></button>
+        </div>
+        <div class="caixaCodigos">
+            <h2>Calculador de IMC</h2>
+            <p>
+                <br>
+                peso = float(input("Digite seu peso (kg): "))<br>
+                altura = float(input("Digite sua altura (m): "))<br>
+<br>
+                imc = peso / (altura ** 2)<br>
+<br>
+                print(f"Seu IMC é: {imc:.2f}")<br>
+<br>
+                if imc < 18.5:<br>
+                    print("Classificação: Abaixo do peso")<br>
+                elif 18.5 <= imc < 24.9:<br>
+                    print("Classificação: Peso normal")<br>
+                elif 25 <= imc < 29.9:<br>
+                    print("Classificação: Sobrepeso")<br>
+                elif 30 <= imc < 34.9:<br>
+                    print("Classificação: Obesidade grau 1")<br>
+                elif 35 <= imc < 39.9:<br>
+                    print("Classificação: Obesidade grau 2")<br>
+                else:<br>
+                    print("Classificação: Obesidade grau 3 (mórbida)")<br>
+                </p>
+                <button><a href="https://i.scdn.co/image/ab67616d0000b273d50b5da81728b0805e741c3b"
+                    target="_blank">Repositório GitHub</a></button>
+        </div>
+    </div>
+    <h2>Front-end: </h2>
+    <div class="miniCaixaCodigos">
+        <h1>Site pessoal</h1>
+        <p>
+            <br>
+            Bem... Nunca tinha feito um projeto HTML até agora... Então eu ponho esse site como um projeto front-end meu 
+        </p>
+        <hr>
+        <button><a href="https://i.scdn.co/image/ab67616d0000b273d50b5da81728b0805e741c3b"
+            target="_blank">Repositório GitHub</a></button>
+    </div>
+</body>
+
+</html>

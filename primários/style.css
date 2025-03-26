@@ -1,0 +1,550 @@
+.backgroundsld1 {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.tituloPrincipal {
+    font-size: 48px;
+    color: #00FF00;
+}
+
+.butoesld1 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.butoesld1 button {
+    background-color: #00FF00;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.butoesld1 button a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.butoesld1 button:hover {
+    background-color: #00CC00;
+    transform: scale(1.1);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.caixa {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: black;
+    text-align: justify;
+}
+
+.caixa li {
+    line-height: 32px;
+}
+
+.listaVerde {
+    color: #00FF00;
+}
+
+.informacoes li {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.textosld1 {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+hr.linhasl1 {
+    border: 1px solid white;
+    margin: 20px 0;
+}
+
+.linhasl1 {
+    color: white;
+    border-radius: 2px;
+}
+
+.butoesld1 {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.paragrafosld1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 36px;
+    text-align: justify;
+}
+
+.textosld1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 36px;
+    text-align: justify;
+}
+
+.butoesld1 button {
+    background-color: white;
+    border: none;
+    padding: 15px 20px;
+    margin-left: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+}
+
+.butoesld1 button a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.butoesld1 button:hover {
+    background-color: green;
+    transform: scale(1.3);
+}
+
+.listaBranca {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 42px;
+}
+
+.listaBrancaE {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 42px;
+    text-align: left;    
+}
+
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 25px;
+    margin-left: 12px;
+    text-indent: 24px;
+}
+
+.listaVerde {
+    color: green;
+}
+
+.tituofinal {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 96px;
+    color: white;
+    text-align: center;
+}
+
+.caixa-arredondada, .caixa-arredondadaE {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 10px;
+    background-color: black;
+    max-width: 40%;
+    text-align: justify;
+}
+
+.caixa-arredondada {
+    float: right; 
+}
+
+.caixa-arredondadaE {
+    float: left; 
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.caixa-menor {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 40%;
+    border-color: white;
+    border-width: 3px;
+    margin: 20px auto;
+}
+
+.caixa-maior {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    border-color: white;
+    border-width: 3px;
+    margin-top: 80px;
+    text-align: center
+}
+
+.textoInterno {
+    text-align: justify;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.tituloNovidades {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+}
+
+.tituloNovidades2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+.caixa-maior:hover {
+    background-color: green;
+    transform: scale(1.01);
+}
+
+.caixa-menor:hover {
+    background-color: green;
+    transform: scale(1.01);
+}
+
+.caixa-arredondada:hover {
+    background-color: green;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.caixa-arredondadaE:hover {
+    background-color: green;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.divisor {
+    height: 24px;
+}
+
+.treino {
+    flex: 1;
+    margin: 10px;
+    max-width: 30%;    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: black;
+    text-align: justify;
+}
+
+.treino:hover {
+    background-color: green;
+    transform: scale(1.01);
+}
+
+.mini-caixa {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 100%;
+    border-color: white;
+    border-width: 3px;
+    margin: 10px 0;
+}
+
+.treinos-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+
+}
+
+.tabelaListas {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 42px;
+    text-align: center;
+    border-color: white;
+    border-width: 3px;
+}
+
+.tabelaSocial {
+    background-color: white;
+    border-width: 3px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.formulario {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+
+form input, form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: green;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.redes button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.redes button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.redes button a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.redes button:hover {
+    background-color: green;
+    transform: scale(1.05);
+}
+
+.redes button:hover a {
+    color: white;
+}
+
+.contato h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: white;
+    margin: 20px;
+}
+
+.contato p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: white;
+    margin: 20px;
+}
+
+.caixaCodigos {
+    width: 35%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: black;
+    text-align: justify;
+    position: relative;
+}
+
+
+.caixasCodigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+
+.projetos {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.projetos button {
+    background-color: grey;
+    padding: 10px 20px;
+    margin-left: 48px;
+    border: none;
+    border-radius: 5px;
+}
+
+.caixaCodigos {
+    width: 48%; 
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 1%; 
+    background-color: black;
+    text-align: justify;
+    position: relative;
+    box-sizing: border-box; 
+}
+
+.caixasCodigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.caixaCodigos button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.caixaCodigos button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.caixaCodigos button:hover {
+    background-color: green;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.miniCaixaCodigos {
+    width: 20%; 
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 1%; 
+    background-color: black;
+    text-align: justify;
+    position: relative;
+    box-sizing: border-box; 
+}
+
+.miniCaixaCodigos button {
+    position: float;
+    top: 5%;
+    right: 5%;
+    background-color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.miniCaixaCodigos button a {
+    text-decoration: none;
+    color: white;
+}
+
+.miniCaixaCodigos button:hover {
+    background-color: green;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
+}
