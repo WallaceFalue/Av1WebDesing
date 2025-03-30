@@ -4,7 +4,10 @@
     padding: 0;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Times New Roman', Times, serif;
     color: white;
     margin: 20px;
@@ -15,7 +18,7 @@ h1 {
 }
 
 h2 {
-    font-size: 34px;
+    font-size: 28px;
 }
 
 h3 {
@@ -23,7 +26,11 @@ h3 {
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 16px;
+}
+
+p {
+    font-size: 14;
 }
 
 body {
@@ -39,23 +46,76 @@ header {
     padding: 20px;
 }
 
+.barraFrontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    height: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.barraFrontal h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.barraFrontal nav {
+    display: flex;
+    gap: 10px;
+}
+
+.barraFrontal nav button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.barraFrontal nav button:hover {
+    background-color: #777;
+    /* Cor ao passar o mouse */
+}
+
 .tituloPrincipal {
     font-size: 48px;
     color: #00FF00;
 }
 
+.tituloMeio {
+    font-size: 36px;
+    align-items: center;
+}
+
 .butoesld1 {
     display: flex;
+    gap: 15px;
     justify-content: center;
-    gap: 10px;
-    margin: 20px 0;
+    gap: 15px;
+    margin: 8px;
+}
+
+.butoesld1 button.apertado {
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+.butoesld1 button.apertado:hover {
+    transform: scale(0.5em);
 }
 
 .butoesld1 button {
     background-color: #00FF00;
     border: none;
-    padding: 15px 20px;
-    border-radius: 5px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -77,6 +137,13 @@ main {
     text-align: center;
 }
 
+.titulosld2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 46px;
+    color: white;
+    text-align: center;
+}
+
 .caixa {
     border: 1px solid #ccc;
     border-radius: 15px;
@@ -84,6 +151,12 @@ main {
     margin: 20px 0;
     background-color: black;
     text-align: justify;
+}
+
+.caixaCentral {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 .caixa li {
@@ -162,11 +235,9 @@ hr.linhasl1 {
 }
 
 .listaBrancaE {
-    color: white;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 42px;
-    text-align: left;    
+        padding-left: 20px; 
+        font-size: 14px;
+        line-height: 1.5;
 }
 
 p {
@@ -190,7 +261,8 @@ p {
     text-align: center;
 }
 
-.caixa-arredondada, .caixa-arredondadaE {
+.caixa-arredondada,
+.caixa-arredondadaE {
     border: 1px solid #ccc;
     border-radius: 15px;
     padding: 20px;
@@ -202,11 +274,11 @@ p {
 }
 
 .caixa-arredondada {
-    float: right; 
+    float: right;
 }
 
 .caixa-arredondadaE {
-    float: left; 
+    float: left;
 }
 
 .clearfix::after {
@@ -281,13 +353,12 @@ p {
 }
 
 .treino {
-    flex: 1;
-    margin: 10px;
-    max-width: 30%;    border: 1px solid #ccc;
-    border-radius: 15px;
-    padding: 20px;
-    background-color: black;
-    text-align: justify;
+    width: 300px;
+    background-color: black; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    padding: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .treino:hover {
@@ -296,19 +367,16 @@ p {
 }
 
 .mini-caixa {
-    border: 1px solid #ccc;
-    border-radius: 15px;
     text-align: center;
-    max-width: 100%;
-    border-color: white;
-    border-width: 3px;
-    margin: 10px 0;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .treinos-container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
 
 }
 
@@ -343,6 +411,33 @@ p {
     text-align: center;
 }
 
+.container2 .conteudo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.container2 .texto2 {
+    flex: 2;
+    margin-right: 20px;
+    line-height: 48px;
+}
+
+.container2 .imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 .imagem img {
+    max-width: 50%;
+    max-height: 50%;
+    height: auto;
+    border-radius: 8px;
+    height: 450px;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -358,7 +453,8 @@ form label {
     max-width: 400px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid white;
@@ -457,7 +553,6 @@ form button:hover {
     margin: 20px;
 }
 
-
 .projetos {
     display: flex;
     justify-content: left;
@@ -475,15 +570,15 @@ form button:hover {
 }
 
 .caixaCodigos {
-    width: 48%; 
+    width: 48%;
     border: 1px solid #ccc;
     border-radius: 15px;
     padding: 20px;
-    margin: 10px 1%; 
+    margin: 10px 1%;
     background-color: black;
     text-align: justify;
     position: relative;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .caixasCodigos {
@@ -516,15 +611,15 @@ form button:hover {
 }
 
 .miniCaixaCodigos {
-    width: 20%; 
+    width: 20%;
     border: 1px solid #ccc;
     border-radius: 15px;
     padding: 20px;
-    margin: 10px 1%; 
+    margin: 10px 1%;
     background-color: black;
     text-align: justify;
     position: relative;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .miniCaixaCodigos button {
@@ -548,3 +643,29 @@ form button:hover {
     transform: scale(1.05);
     transition: background-color 0.3s, transform 0.3s;
 }
+
+.listaComImagens {
+    display: flex;
+    align-items: flex-start;
+}
+
+.listaBranca {
+    flex: 1;
+}
+
+.imagensDireita {
+    margin-left: 20px;
+   
+}
+
+.imagemLista {
+    display: block;
+    margin-bottom: 250px;
+    margin-right: 200px;
+    width: 450px; 
+    height: 300px;
+    border-radius: 80%;
+    border-color: white;
+    border: 2px solid white;
+}
+
